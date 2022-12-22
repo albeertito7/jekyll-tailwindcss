@@ -1,0 +1,28 @@
+## Jekyll Configuration ##
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: Jekyll + TailwindCss # the name of your site, e.g. ACME Corp.
+author: Albert Perez Datsira
+
+plugins:
+  - jekyll-postcss-v2
+
+postcss:
+  cache: false
+
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - Gemfile*
+  - Dockerfile
+  - docker*
+  - node_modules
+  - package*.json
+  - yarn.lock
+  - postcss*.js
+  - tailwind*.js

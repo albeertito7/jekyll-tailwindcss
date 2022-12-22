@@ -1,0 +1,10 @@
+version: '3' # the docker-compose .yml files are versioned, with backwards compatibility
+
+services:
+  jekyll: # service name
+    build: .
+    command: bundle exec jekyll serve --profile --incremental --trace --force_polling --livereload --host 0.0.0.0
+    ports:
+      - "4000:4000" # binding ports
+    volumes:
+      - .:/app
