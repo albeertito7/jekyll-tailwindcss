@@ -5,7 +5,40 @@ This is a basic configuration using PostCSS and its plugin, TailwindCSS.
 
 ## Getting Started
 
+Before anything, you should install the node module dependencies.
+
+Just doing:
+
+    $ yarn install
+
+> Note: you can also use `npm`.
+
+In this way, the PostCSS, TailwindCSS, and other dependencies will be included in your project.
+
+Thus, enabling Jekyll to use them.
+
 ### Local
+
+To run the application in your own local environment, you should install ruby.
+
+There are many websites helping you out on this task. But you can check if you already got them by running:
+
+    $ ruby -v
+    
+Afterwards, you should install Bundler and Jekyll:
+
+    $ gem install bundler jekyll
+    
+And, to check them all:
+    
+    $ bundler -v
+    $ jekyll -v
+    
+Also you can follow the oficial website steps if any doubt. Here the [link](https://jekyllrb.com/docs/installation/).
+
+Finally, you just need to run:
+
+    $ bundle exec jekyll serve
 
 ### Docker
 
