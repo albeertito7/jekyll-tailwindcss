@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
+
+    {% include header.html %}
+
     <div class="flex h-screen">
       <div class="m-auto prose prose-yellow prose-sm">
         <h1 class="text-5x2">I'm using Tailwind CSS!</h1>
       </div>
     </div>
+
+    {% include footer.html %}
   </body>
 </html>
